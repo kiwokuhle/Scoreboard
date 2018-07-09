@@ -1,0 +1,80 @@
+<!--
+  Generated template for the ScorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Score Board </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content> <br> <br>
+    <div align="center"  >
+        <img src="../../assets/imgs/rugby.png" alt="" width="100px" >
+        <h1 align="center" >Rugby score board</h1>
+  
+    </div>
+  <div align='center' class="body" >
+      <ion-grid  >        
+          <ion-row  center  >
+            <ion-col  col-5 offset-1 class="column"  (click)="Check('TeamA')"  >
+              
+             <h3>Home</h3>
+             <ion-card class="card" >
+                <h4 style="font-size: 500%"  > {{Home}}</h4>  
+             </ion-card >
+
+             <div   *ngFor="let a of ScoreArray"  >
+                <h2>{{a.TeamA}}</h2>
+                 </div>
+            </ion-col>
+
+            <ion-col col-5- offset-1 class="column1" (click)="Check('TeamB')"  >
+                <h3>Away</h3>
+                <ion-card class="card" >
+                    <h4 style="font-size: 500%" > {{Away}}</h4>
+                  </ion-card >
+
+                  <div  *ngFor="let a of ScoreArray"   >
+                      <h2> {{a.TeamB}}</h2>
+                  </div>
+            </ion-col >           
+          </ion-row  >
+        </ion-grid>
+        <br><br>
+
+
+        <div align="center" >
+            <button ion-button color="button" (click)="Try()" class="button1"  > Try</button >
+              <button ion-button color="button" (click)="Tryundo()" > <ion-icon ios="ios-undo" md="md-undo"></ion-icon> </button >
+        </div>
+
+        <div align="center" >
+            <button ion-button color="button" (click)="Penalty()"class="button1"  > Penalty</button >
+              <button ion-button color="button" (click)="Penaltyundo()" ><ion-icon ios="ios-undo" md="md-undo"></ion-icon> </button >
+            </div>
+
+            <div align="center" >
+            <button ion-button color="button" (click)="Convension()" class="button1"  > Convension </button >
+              <button ion-button color="button" (click)="Convensionundo()" > <ion-icon ios="ios-undo" md="md-undo"></ion-icon></button >
+            </div> 
+
+        <div align="center" >
+            <button ion-button color="button" (click)="Reset()"class="button1"  >Reset </button >
+              <button ion-button color="button" (click)="Reset()" ><ion-icon ios="ios-refresh" md="md-refresh"></ion-icon></button >
+        </div>     
+  </div>
+   
+    
+
+
+ 
+
+
+
+

@@ -1,0 +1,77 @@
+page-score {
+    ion-content{
+        background: url('../../assets/imgs/4.jpg');
+        background-size: cover;
+    }
+    .column1{
+            height: 300px;
+            color: white;
+            box-shadow: 5px 5px 5px 5px 	rgb(231, 191, 229); 
+            
+            }
+            .column1:active{
+                border: 5px solid rgb(9, 245, 68);
+            
+                
+                
+                }
+                .column1:hover{
+                    border: 5px solid white;
+                
+                    
+                    
+                    }
+            h1{
+                position: relative;
+                top: -25px;
+                box-align: center;
+                box-align: center;
+                
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 30px;
+            color: white;
+            font-size: 30px;
+            }
+            h2{
+                text-decoration: underline ;
+            }
+
+         
+
+         .column{
+                height: 300px;
+                color: white;
+                box-shadow: 5px 5px 5px 5px 	rgb(231, 191, 229); 
+                background-color: #A17E9F;
+            
+                
+                
+                
+        }
+        .column:active{
+            border: 5px solid rgb(9, 245, 68);
+        }
+        
+        .column:hover{
+            border: 5px solid white;
+        
+            }
+
+            ion-row{
+                justify-content: center;
+            }
+            .card{
+                
+                height: 100px;
+                margin: 0 auto; 
+                float: none;
+                margin-bottom: 10px;
+                color: #AB5C5F;
+            }
+            .button1{
+                width: 100px;
+            }
+            
+            }
+
+

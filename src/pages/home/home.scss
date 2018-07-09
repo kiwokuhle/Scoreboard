@@ -1,3 +1,46 @@
-page-home {
+page-home { 
 
+    ion-content{
+        background: url('../../assets/imgs/4.jpg');
+        background-size: cover;
+        
+
+    }
+    .image{
+        position: relative;
+        bottom: -60px;
+    }
+    .content{
+        position: relative;
+        bottom: -60px;
+
+    }
+    
+    h1{
+        position: relative;
+        box-align: center;
+        
+	font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 35px;
+    }
+    h5{
+        position: relative;
+        top: -25px;
+        box-align: center;
+        
+	font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 15px;
+    }
+
+div{
+    box-align: center;
 }
+.button{
+    box-align: center;
+}
+}
+
