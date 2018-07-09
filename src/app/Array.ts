@@ -1,3 +1,3 @@
-var Array = [];
+var Arr = [];
 
 export  default Array; 

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController,AlertController } from 'ionic-angular';
 import { ScorePage } from '../score/score';
 import { Teams } from '../../app/Object';
-import Array from '../../app/Array';
+import Arr from '../../app/Array';
 
 @Component({
   selector: 'page-home',
@@ -19,16 +19,15 @@ export class HomePage {
     if (this.Home !=undefined && this.Away != undefined) {
       
   
-    let obj = new Teams(this.Home,this.Away);
-    Array.push(obj);
-    console.log(Array);
+      Arr[0] = this.Home;
+      Arr[1] =  this.Away;
     
     this.navCtrl.push(ScorePage);
   }else{
 
     let alert = this.alertCtrl.create({
       title: 'Confirm Teams',
-      message: 'Home Team is {{TeamA}} and Away Team is {{TeamB}}',
+      message: 'please enter team names',
       buttons: [
         {
           text: 'Cancel',

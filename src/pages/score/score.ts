@@ -20,8 +20,14 @@ export class ScorePage {
   ScoreArray = Arr;
 
   Teams;
-  Home=0;
   Away=0;
+  Home=0;
+
+  TeamA= Arr[0];
+  TeamB= Arr[1];
+
+
+  
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -131,7 +137,7 @@ Convensionundo(){
 Reset(){
   this.Home=0;
   this.Away=0;
-  this.navCtrl.pop();
+  this.navCtrl.push(HomePage);
   
 
   
